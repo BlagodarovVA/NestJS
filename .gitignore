@@ -1,4 +1,4 @@
-# dependencies
+# compiled output
 /dist
 /node_modules
 /.clinic
@@ -8,15 +8,11 @@
 /.pnp
 .pnp.js
 
-# testing
-/coverage
-
-# production
-/build
-Thumbs.db
-.vscode
-*.zip
+# Logs
+logs
 *.log
+npm-debug.log*
+pnpm-debug.log*
 
 # misc
 .DS_Store
@@ -25,6 +21,18 @@ Thumbs.db
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Tests
+/coverage
+/.nyc_output
+
+# production
+/build
+Thumbs.db
+*.zip
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
