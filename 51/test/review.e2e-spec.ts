@@ -49,7 +49,6 @@ describe('AppController (e2e)', () => {
 			.then(({ body }: request.Response) => {
 				createdId = body._id;
 				expect(createdId).toBeDefined();
-				//done();
 			});
 	});
 
@@ -59,8 +58,7 @@ describe('AppController (e2e)', () => {
 		.send({...testDto, rating: 0})
 		.expect(400)
 		.then(({body}: request.Response) => {
-			console.log(body);
-			//done();
+			//console.log(body);
 		});
 	});
 
@@ -71,7 +69,7 @@ describe('AppController (e2e)', () => {
 			.expect(200)
 			.then(({body}: request.Response) => {
 				expect(body.length).toBe(1);
-				console.log(body);
+				//console.log(body);
 			});
 	});
 
@@ -82,7 +80,6 @@ describe('AppController (e2e)', () => {
 			.expect(200)
 			.then(({body}: request.Response) => {
 				expect(body.length).toBe(0);
-				//done();
 			});
 	});
 
